@@ -1,0 +1,44 @@
+  .center 
+  {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 30%;
+  }
+  
+  .nav
+  {
+      text-align: center;
+  }
+
+  .nav ul li
+  {
+      display: inline;
+      overflow: hidden;
+      list-style-type: none;
+  }
+
+  .nav ul
+  {
+      border-bottom: 1px solid #36384a;
+      border-top: 1px solid #36384a;
+      background-color: #222431
+  }
+    
+  .nav a
+  {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+  }
+  .nav li a:hover 
+  {
+      background-color: #111;
+  }
+
+  body
+  {
+      background-color: #1d1f29;
+  }
