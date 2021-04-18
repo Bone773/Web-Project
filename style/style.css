@@ -1,4 +1,8 @@
-  .center 
+* {
+  box-sizing: border-box;
+}
+
+.center 
   {
       display: block;
       margin-left: auto;
@@ -6,39 +10,232 @@
       width: 30%;
   }
   
-  .nav
+  .navbar 
   {
-      text-align: center;
+    overflow: hidden;
+    background-color: #2b2e3d;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  
+  .navbar a 
+  {
+    float: right;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  
+  .dropdown 
+  {
+    float: right;
+    overflow: hidden;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  
+  .dropdown .dropbtn 
+  {
+    font-size: 20px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn 
+  {
+    background-color: red;
+  }
+  
+  .dropdown-content 
+  {
+    display: none;
+    position: absolute;
+    background-color: #2b2e3d;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a 
+  {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  
+  .dropdown-content a:hover 
+  {
+    background-color: red; /*red */
+  }
+  
+  .dropdown:hover .dropdown-content 
+  {
+    display: block;
   }
 
-  .nav ul li
+  article
   {
-      display: inline;
-      overflow: hidden;
-      list-style-type: none;
-  }
-
-  .nav ul
-  {
-      border-bottom: 1px solid #36384a;
-      border-top: 1px solid #36384a;
-      background-color: #222431
-  }
-    
-  .nav a
-  {
-      display: inline-block;
       color: white;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-  }
-  .nav li a:hover 
-  {
-      background-color: #111;
+      font-size: 20px;
+      margin-right: 5%;
+      margin-left: 5%;
   }
 
-  body
+  .bold
   {
-      background-color: #1d1f29;
+    font-size: 30px;
   }
+
+  .char-list 
+  {
+    margin: 0;
+    padding: .3rem;
+    background-color: #2b2e3d;
+    font: 1rem 'Fira Sans', sans-serif;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.character 
+{
+    margin: 3%;
+    padding: .3rem;
+    font-size: 1.2rem;
+    background-color: #2b2e3d;
+
+}
+
+body 
+  {
+    font-family: Arial;
+    color: white;
+    padding: 20px;
+    background: #1d1f29;
+  }
+  
+  .leftcolumn 
+  {   
+    float: left;
+    width: 65%;
+    margin-left: 5%;
+  }
+  
+  .rightcolumn 
+  {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+    margin-right: 5%;
+  }
+  
+  .div-img 
+  {
+    width: 50%;
+    padding: 20px;
+  }
+  
+  .card 
+  {
+     background-color: #2b2e3d;
+     padding: 20px;
+     margin-top: 20px;
+  }
+
+  .card-story
+  {
+    background-color: #2b2e3d;
+    float: left;
+    width: 90%;
+    padding: 10px;
+    margin: 5%;
+    font-size: 30px;
+  }
+  
+  .crd-img
+  {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .row:after 
+  {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  @media screen and (max-width: 800px) 
+  {
+    .leftcolumn, .rightcolumn 
+    {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  .fa 
+  {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+
+  .fa:hover 
+  {
+    opacity: 0.7;
+  }
+
+.fa-facebook 
+{
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter 
+{
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-youtube 
+{
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram 
+{
+  background: #125688;
+  color: white;
+}
+
+.fa-reddit 
+{
+  background: #ff5700;
+  color: white;
+}
+
+.a-txt-link
+{
+  text-decoration: none;
+  color: #f39c12
+}
+
+
+
+
+
