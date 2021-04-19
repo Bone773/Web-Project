@@ -235,6 +235,14 @@ body
   color: #f39c12
 }
 
+footer {
+  text-align: center;
+  padding: 3px;
+  margin: 5%;
+  background-color: #2b2e3d;
+  color: white;
+}
+
 
 
 
